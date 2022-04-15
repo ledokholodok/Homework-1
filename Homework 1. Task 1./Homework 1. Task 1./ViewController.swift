@@ -9,11 +9,10 @@ import UIKit
 import SnapKit
 
 class ViewController: UIViewController, UITextFieldDelegate {
+    
     let navigationBar = UINavigationBar()
     let taskTextField = UITextField()
     let taskView = UIView()
-    let leftBarButton = UIBarButtonItem(title: "Cancel", style: .plain, target: self, action: nil)
-    let rightBarButton = UIBarButtonItem(title: "Done", style: .plain, target: self, action: nil)
     let remindDayView = UIView()
     let remindDayLabel = UILabel()
     let remindDaySwitch = UISwitch()
@@ -33,6 +32,7 @@ class ViewController: UIViewController, UITextFieldDelegate {
     let prioritySegmentedControl = UISegmentedControl()
     let notesView = UIView()
     let notesLabel = UILabel()
+    let segments = ["None", "!", "!!", "!!!"]
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -52,8 +52,11 @@ class ViewController: UIViewController, UITextFieldDelegate {
     private func configureNavigationBar() {
         view.addSubview(navigationBar)
         navigationBar.backgroundColor = .white
+        let leftBarButton = UIBarButtonItem(title: "Cancel", style: .plain, target: ViewController.self, action: .none)
         navigationItem.leftBarButtonItem = leftBarButton
         navigationItem.title = "Create Reminder"
+        
+        let rightBarButton = UIBarButtonItem(title: "Done", style: .plain, target: ViewController.self, action: .none)
         navigationItem.rightBarButtonItem = rightBarButton
         
         navigationBar.snp.makeConstraints {
@@ -64,7 +67,6 @@ class ViewController: UIViewController, UITextFieldDelegate {
     private func configureTaskTextField() {
         view.addSubview(taskView)
         taskView.backgroundColor = .white
-        
         taskView.addSubview(taskTextField)
         taskTextField.backgroundColor = .white
         taskTextField.placeholder = "Enter the task"
@@ -95,6 +97,7 @@ class ViewController: UIViewController, UITextFieldDelegate {
         remindDayLabel.text = "Remind me on a day"
         
         remindDayView.addSubview(remindDaySwitch)
+        remindDaySwitch.addTarget(self, action: #selector(self.switchValueDidChange), for: .valueChanged)
         
         remindDayLabel.snp.makeConstraints {
             $0.top.trailing.bottom.equalToSuperview()
@@ -112,6 +115,10 @@ class ViewController: UIViewController, UITextFieldDelegate {
             $0.leading.trailing.equalToSuperview()
             $0.height.equalTo(44)
         }
+    }
+    
+    @objc func switchValueDidChange(sender:UISwitch!) {
+            print("Remind")
     }
     
     private func configureDateView() {
@@ -156,6 +163,7 @@ class ViewController: UIViewController, UITextFieldDelegate {
 
     @objc func datePickerChanged(picker: UIDatePicker) {
         dateLabel.text = dateFormatter.string(from: datePicker.date)
+        print(dateLabel.text!)
     }
     
     private func configureRepeatView() {
@@ -205,6 +213,7 @@ class ViewController: UIViewController, UITextFieldDelegate {
         remindLocationLabel.text = "Remind me at a location"
         
         remindLocationView.addSubview(remindLocationSwitch)
+        remindLocationSwitch.addTarget(self, action: #selector(self.switchValueDidChange), for: .valueChanged)
         
         remindLocationLabel.snp.makeConstraints {
             $0.top.trailing.bottom.equalToSuperview()
@@ -258,11 +267,15 @@ class ViewController: UIViewController, UITextFieldDelegate {
         prioritySegmentedControl.setTitleTextAttributes(titleTextAttributes, for: .selected)
         prioritySegmentedControl.layer.borderWidth = 1
         prioritySegmentedControl.layer.borderColor = UIColor.systemBlue.cgColor
-        let segments = ["None", "!", "!!", "!!!"]
+        prioritySegmentedControl.addTarget(self, action: #selector(self.priorityChanged), for:.valueChanged)
         
         for segment in segments {
             prioritySegmentedControl.insertSegment(withTitle: segment, at: prioritySegmentedControl.numberOfSegments, animated: false)
         }
+    }
+    
+    @objc func priorityChanged(sender: UISegmentedControl) {
+        print(segments[sender.selectedSegmentIndex])
     }
     
     private func configureNotesView() {

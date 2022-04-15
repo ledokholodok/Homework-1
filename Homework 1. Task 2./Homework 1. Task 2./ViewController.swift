@@ -7,6 +7,7 @@
 
 import UIKit
 import SnapKit
+import PhotosUI
 
 class ViewController: UIViewController {
     
@@ -60,6 +61,9 @@ class ViewController: UIViewController {
         roundView(image: imageView, x: 37)
         imageView.layer.borderWidth = 1.0
         imageView.layer.borderColor = CGColor(red: 0.28, green: 0.28, blue: 0.28, alpha: 1.0)
+        let gesture = UITapGestureRecognizer(target: self, action:  #selector(self.checkImageAction))
+        imageView.addGestureRecognizer(gesture)
+        imageView.isUserInteractionEnabled = true
         
         view.addSubview(changeImageView)
         changeImageView.backgroundColor = UIColor(red: 0.18, green: 0.38, blue: 0.89, alpha: 1.0)
@@ -89,6 +93,20 @@ class ViewController: UIViewController {
     func roundView(image : UIImageView, x : CGFloat) {
         image.layer.cornerRadius = x
         image.clipsToBounds = true
+    }
+    
+    @objc func checkImageAction(sender : UITapGestureRecognizer) {
+        PHPhotoLibrary.requestAuthorization(for: .readWrite) { [unowned self] (status) in
+            DispatchQueue.main.async { [unowned self] in
+                if status == .authorized || status == .limited {
+                    let vc = UIImagePickerController()
+                    vc.sourceType = .photoLibrary
+                    vc.delegate = self
+                    vc.allowsEditing = true
+                    present(vc, animated: true)
+                }
+            }
+        }
     }
     
     private func configureUserInfo() {
@@ -163,9 +181,11 @@ class ViewController: UIViewController {
             case RightElement.Arrow:
                 let arrow = UIImageView()
                 cellView.addSubview(arrow)
+                arrow.image = UIImage(named: "forward arrow")
                 arrow.snp.makeConstraints {
                     $0.trailing.equalToSuperview().inset(16)
                     $0.top.equalToSuperview().inset(16)
+                    $0.height.width.equalTo(24)
                 }
             case RightElement.Nothing:
                 break
@@ -193,11 +213,35 @@ class ViewController: UIViewController {
         ]
         
         var previousCell: UIView = line
-        for cell in cellArray {
-            let cellView = createCell(cell: cell, topView: previousCell)
+        for i in 0...(cellArray.count - 1) {
+            let cellView = createCell(cell: cellArray[i], topView: previousCell)
+            if i == 1 {
+                let gesture = UITapGestureRecognizer(target: self, action:  #selector(self.checkAction))
+                cellView.addGestureRecognizer(gesture)
+            }
             previousCell = cellView
         }
+    }
     
+    @objc func checkAction(sender : UITapGestureRecognizer) {
+        let rootVC = ChangePasswordViewController()
+        let navVC = UINavigationController(rootViewController: rootVC)
+        navVC.modalPresentationStyle = .fullScreen
+        present(navVC, animated: true)
+    }
+    
+}
+
+extension ViewController: UIImagePickerControllerDelegate, UINavigationControllerDelegate {
+    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
+        if let image = info[UIImagePickerController.InfoKey(rawValue: "UIImagePickerControllerEditedImage")] as? UIImage {
+            imageView.image = image
+        }
+        picker.dismiss(animated: true, completion: nil)
+    }
+
+    func imagePickerControllerDidCancel(_ picker: UIImagePickerController) {
+        picker.dismiss(animated: true, completion: nil)
     }
 }
 

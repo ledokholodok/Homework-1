@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		209ED4062808B47F00D64468 /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 209ED4052808B47F00D64468 /* CustomTextField.swift */; };
 		209F2DF02805437A00559666 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 209F2DEF2805437A00559666 /* AppDelegate.swift */; };
 		209F2DF22805437A00559666 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 209F2DF12805437A00559666 /* SceneDelegate.swift */; };
 		209F2DF42805437A00559666 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 209F2DF32805437A00559666 /* ViewController.swift */; };
@@ -19,10 +20,12 @@
 		20AB35302805939900798C68 /* Montserrat Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 20AB352F2805939900798C68 /* Montserrat Regular.ttf */; };
 		20AB35322805B01B00798C68 /* Cell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20AB35312805B01B00798C68 /* Cell.swift */; };
 		20AB35342805B07D00798C68 /* RightElement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20AB35332805B07D00798C68 /* RightElement.swift */; };
+		20BAFF9828081A1300B68026 /* ChangePasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20BAFF9728081A1300B68026 /* ChangePasswordViewController.swift */; };
 		87AC564ACE25C51B38F8AD70 /* Pods_Homework_1__Task_2_.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8DD47145F7A86FF27F097E41 /* Pods_Homework_1__Task_2_.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		209ED4052808B47F00D64468 /* CustomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
 		209F2DEC2805437A00559666 /* Homework 1. Task 2..app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Homework 1. Task 2..app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		209F2DEF2805437A00559666 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		209F2DF12805437A00559666 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -37,6 +40,7 @@
 		20AB352F2805939900798C68 /* Montserrat Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Montserrat Regular.ttf"; path = "../../../../Downloads/Montserrat Regular.ttf"; sourceTree = "<group>"; };
 		20AB35312805B01B00798C68 /* Cell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cell.swift; sourceTree = "<group>"; };
 		20AB35332805B07D00798C68 /* RightElement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RightElement.swift; sourceTree = "<group>"; };
+		20BAFF9728081A1300B68026 /* ChangePasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangePasswordViewController.swift; sourceTree = "<group>"; };
 		2E38B45899B9B357A9A9A005 /* Pods-Homework 1. Task 2..release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Homework 1. Task 2..release.xcconfig"; path = "Target Support Files/Pods-Homework 1. Task 2./Pods-Homework 1. Task 2..release.xcconfig"; sourceTree = "<group>"; };
 		365E6CC9332A454887A826D8 /* Pods-Homework 1. Task 2..debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Homework 1. Task 2..debug.xcconfig"; path = "Target Support Files/Pods-Homework 1. Task 2./Pods-Homework 1. Task 2..debug.xcconfig"; sourceTree = "<group>"; };
 		8DD47145F7A86FF27F097E41 /* Pods_Homework_1__Task_2_.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Homework_1__Task_2_.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -81,7 +85,9 @@
 				209F2DEF2805437A00559666 /* AppDelegate.swift */,
 				209F2DF12805437A00559666 /* SceneDelegate.swift */,
 				209F2DF32805437A00559666 /* ViewController.swift */,
+				20BAFF9728081A1300B68026 /* ChangePasswordViewController.swift */,
 				20AB35312805B01B00798C68 /* Cell.swift */,
+				209ED4052808B47F00D64468 /* CustomTextField.swift */,
 				20AB35332805B07D00798C68 /* RightElement.swift */,
 				209F2DF52805437A00559666 /* Main.storyboard */,
 				209F2DFB2805437C00559666 /* Assets.xcassets */,
@@ -231,8 +237,10 @@
 				209F2DF02805437A00559666 /* AppDelegate.swift in Sources */,
 				20AB35322805B01B00798C68 /* Cell.swift in Sources */,
 				209F2DFA2805437A00559666 /* Homework_1__Task_2_.xcdatamodeld in Sources */,
+				209ED4062808B47F00D64468 /* CustomTextField.swift in Sources */,
 				209F2DF22805437A00559666 /* SceneDelegate.swift in Sources */,
 				20AB35342805B07D00798C68 /* RightElement.swift in Sources */,
+				20BAFF9828081A1300B68026 /* ChangePasswordViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
