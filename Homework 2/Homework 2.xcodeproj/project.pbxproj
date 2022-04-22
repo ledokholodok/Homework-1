@@ -7,25 +7,64 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		206CAC35280DE4FF00C4D67D /* FriendsCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 206CAC34280DE4FE00C4D67D /* FriendsCollectionViewCell.swift */; };
+		206CAC37280DFBC200C4D67D /* Friend.swift in Sources */ = {isa = PBXBuildFile; fileRef = 206CAC36280DFBC200C4D67D /* Friend.swift */; };
+		206CAC42280EB65900C4D67D /* SF Font.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 206CAC44280EB65900C4D67D /* SF Font.ttf */; };
+		206CAC4C280F133200C4D67D /* MyFriendsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 206CAC4B280F133200C4D67D /* MyFriendsViewModel.swift */; };
+		206CAC4E280F135700C4D67D /* MyFriendsDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 206CAC4D280F135600C4D67D /* MyFriendsDataSource.swift */; };
+		206CAC52280F307D00C4D67D /* AddNewFriendViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 206CAC51280F307C00C4D67D /* AddNewFriendViewController.swift */; };
+		20963E54280FE9890083155C /* NewContactsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20963E53280FE9890083155C /* NewContactsTableViewCell.swift */; };
+		20963E5628101F430083155C /* NewContactOption.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20963E5528101F430083155C /* NewContactOption.swift */; };
+		20963E5828101F8F0083155C /* MightKnow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20963E5728101F8F0083155C /* MightKnow.swift */; };
+		20963E5B281020E50083155C /* ConfigurableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20963E5A281020E50083155C /* ConfigurableCell.swift */; };
+		20963E5D2810210F0083155C /* CellConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20963E5C2810210F0083155C /* CellConfigurator.swift */; };
+		20963E61281024840083155C /* MightKnowTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20963E60281024840083155C /* MightKnowTableViewCell.swift */; };
+		20963E6328103DA70083155C /* AddNewFriendDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20963E6228103DA70083155C /* AddNewFriendDataSource.swift */; };
+		20963E6528107E2E0083155C /* AddNewFriendViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20963E6428107E2E0083155C /* AddNewFriendViewModel.swift */; };
+		20963E6B2811D0D50083155C /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 20963E6D2811D0D50083155C /* Localizable.strings */; };
 		20EB6B92280DA6C7000AFB38 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20EB6B91280DA6C7000AFB38 /* AppDelegate.swift */; };
 		20EB6B94280DA6C7000AFB38 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20EB6B93280DA6C7000AFB38 /* SceneDelegate.swift */; };
-		20EB6B96280DA6C7000AFB38 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20EB6B95280DA6C7000AFB38 /* ViewController.swift */; };
+		20EB6B96280DA6C7000AFB38 /* MyFriendsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20EB6B95280DA6C7000AFB38 /* MyFriendsViewController.swift */; };
 		20EB6B99280DA6C7000AFB38 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 20EB6B97280DA6C7000AFB38 /* Main.storyboard */; };
 		20EB6B9C280DA6C7000AFB38 /* Homework_2.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 20EB6B9A280DA6C7000AFB38 /* Homework_2.xcdatamodeld */; };
 		20EB6B9E280DA6C9000AFB38 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 20EB6B9D280DA6C9000AFB38 /* Assets.xcassets */; };
 		20EB6BA1280DA6C9000AFB38 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 20EB6B9F280DA6C9000AFB38 /* LaunchScreen.storyboard */; };
+		A091D49F4127A273B4F799EC /* Pods_Homework_2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E442434DBCCD0585CD6E40D /* Pods_Homework_2.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0E442434DBCCD0585CD6E40D /* Pods_Homework_2.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Homework_2.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1C2EB711CC20EFF83F055F1B /* Pods-Homework 2.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Homework 2.release.xcconfig"; path = "Target Support Files/Pods-Homework 2/Pods-Homework 2.release.xcconfig"; sourceTree = "<group>"; };
+		206CAC34280DE4FE00C4D67D /* FriendsCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendsCollectionViewCell.swift; sourceTree = "<group>"; };
+		206CAC36280DFBC200C4D67D /* Friend.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Friend.swift; sourceTree = "<group>"; };
+		206CAC43280EB65900C4D67D /* en */ = {isa = PBXFileReference; lastKnownFileType = file; name = en; path = "en.lproj/SF Font.ttf"; sourceTree = "<group>"; };
+		206CAC45280EB68200C4D67D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file; name = Base; path = "Base.lproj/SF Font.ttf"; sourceTree = "<group>"; };
+		206CAC4B280F133200C4D67D /* MyFriendsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyFriendsViewModel.swift; sourceTree = "<group>"; };
+		206CAC4D280F135600C4D67D /* MyFriendsDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyFriendsDataSource.swift; sourceTree = "<group>"; };
+		206CAC51280F307C00C4D67D /* AddNewFriendViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddNewFriendViewController.swift; sourceTree = "<group>"; };
+		20963E53280FE9890083155C /* NewContactsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewContactsTableViewCell.swift; sourceTree = "<group>"; };
+		20963E5528101F430083155C /* NewContactOption.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewContactOption.swift; sourceTree = "<group>"; };
+		20963E5728101F8F0083155C /* MightKnow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MightKnow.swift; sourceTree = "<group>"; };
+		20963E5A281020E50083155C /* ConfigurableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfigurableCell.swift; sourceTree = "<group>"; };
+		20963E5C2810210F0083155C /* CellConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellConfigurator.swift; sourceTree = "<group>"; };
+		20963E60281024840083155C /* MightKnowTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MightKnowTableViewCell.swift; sourceTree = "<group>"; };
+		20963E6228103DA70083155C /* AddNewFriendDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddNewFriendDataSource.swift; sourceTree = "<group>"; };
+		20963E6428107E2E0083155C /* AddNewFriendViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddNewFriendViewModel.swift; sourceTree = "<group>"; };
+		20963E682811D0770083155C /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
+		20963E692811D0770083155C /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/Main.strings; sourceTree = "<group>"; };
+		20963E6A2811D0770083155C /* ru */ = {isa = PBXFileReference; lastKnownFileType = file; name = ru; path = "ru.lproj/SF Font.ttf"; sourceTree = "<group>"; };
+		20963E6C2811D0D50083155C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		20963E6E2811D0DA0083155C /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/Localizable.strings; sourceTree = "<group>"; };
 		20EB6B8E280DA6C7000AFB38 /* Homework 2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Homework 2.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		20EB6B91280DA6C7000AFB38 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		20EB6B93280DA6C7000AFB38 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		20EB6B95280DA6C7000AFB38 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		20EB6B95280DA6C7000AFB38 /* MyFriendsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyFriendsViewController.swift; sourceTree = "<group>"; };
 		20EB6B98280DA6C7000AFB38 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		20EB6B9B280DA6C7000AFB38 /* Homework_2.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Homework_2.xcdatamodel; sourceTree = "<group>"; };
 		20EB6B9D280DA6C9000AFB38 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		20EB6BA0280DA6C9000AFB38 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		20EB6BA2280DA6C9000AFB38 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ED61A09A0C6FCAA96942B6D8 /* Pods-Homework 2.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Homework 2.debug.xcconfig"; path = "Target Support Files/Pods-Homework 2/Pods-Homework 2.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,17 +72,78 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A091D49F4127A273B4F799EC /* Pods_Homework_2.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		206CAC33280DAA8700C4D67D /* Application Layer */ = {
+			isa = PBXGroup;
+			children = (
+				20EB6B91280DA6C7000AFB38 /* AppDelegate.swift */,
+				20EB6B93280DA6C7000AFB38 /* SceneDelegate.swift */,
+			);
+			path = "Application Layer";
+			sourceTree = "<group>";
+		};
+		206CAC4A280F0C7300C4D67D /* Pages */ = {
+			isa = PBXGroup;
+			children = (
+				20EB6B95280DA6C7000AFB38 /* MyFriendsViewController.swift */,
+				206CAC51280F307C00C4D67D /* AddNewFriendViewController.swift */,
+			);
+			path = Pages;
+			sourceTree = "<group>";
+		};
+		206CAC4F280F2CE600C4D67D /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				206CAC4B280F133200C4D67D /* MyFriendsViewModel.swift */,
+				20963E6428107E2E0083155C /* AddNewFriendViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		206CAC50280F2D4000C4D67D /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				206CAC36280DFBC200C4D67D /* Friend.swift */,
+				20963E5528101F430083155C /* NewContactOption.swift */,
+				20963E5728101F8F0083155C /* MightKnow.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		20963E52280FE8EE0083155C /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				206CAC4D280F135600C4D67D /* MyFriendsDataSource.swift */,
+				20963E6228103DA70083155C /* AddNewFriendDataSource.swift */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		20963E59281020410083155C /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				206CAC34280DE4FE00C4D67D /* FriendsCollectionViewCell.swift */,
+				20963E53280FE9890083155C /* NewContactsTableViewCell.swift */,
+				20963E60281024840083155C /* MightKnowTableViewCell.swift */,
+				20963E5A281020E50083155C /* ConfigurableCell.swift */,
+				20963E5C2810210F0083155C /* CellConfigurator.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
 		20EB6B85280DA6C7000AFB38 = {
 			isa = PBXGroup;
 			children = (
 				20EB6B90280DA6C7000AFB38 /* Homework 2 */,
 				20EB6B8F280DA6C7000AFB38 /* Products */,
+				43FFBB6766E71362FA48ADD9 /* Pods */,
+				8D80396095C11696C5AB0B37 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -58,16 +158,38 @@
 		20EB6B90280DA6C7000AFB38 /* Homework 2 */ = {
 			isa = PBXGroup;
 			children = (
-				20EB6B91280DA6C7000AFB38 /* AppDelegate.swift */,
-				20EB6B93280DA6C7000AFB38 /* SceneDelegate.swift */,
-				20EB6B95280DA6C7000AFB38 /* ViewController.swift */,
+				206CAC33280DAA8700C4D67D /* Application Layer */,
+				206CAC4A280F0C7300C4D67D /* Pages */,
+				206CAC4F280F2CE600C4D67D /* ViewModels */,
+				206CAC50280F2D4000C4D67D /* Models */,
+				20963E59281020410083155C /* Cell */,
+				20963E52280FE8EE0083155C /* Data */,
+				20EB6B9F280DA6C9000AFB38 /* LaunchScreen.storyboard */,
 				20EB6B97280DA6C7000AFB38 /* Main.storyboard */,
 				20EB6B9D280DA6C9000AFB38 /* Assets.xcassets */,
-				20EB6B9F280DA6C9000AFB38 /* LaunchScreen.storyboard */,
 				20EB6BA2280DA6C9000AFB38 /* Info.plist */,
+				206CAC44280EB65900C4D67D /* SF Font.ttf */,
 				20EB6B9A280DA6C7000AFB38 /* Homework_2.xcdatamodeld */,
+				20963E6D2811D0D50083155C /* Localizable.strings */,
 			);
 			path = "Homework 2";
+			sourceTree = "<group>";
+		};
+		43FFBB6766E71362FA48ADD9 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				ED61A09A0C6FCAA96942B6D8 /* Pods-Homework 2.debug.xcconfig */,
+				1C2EB711CC20EFF83F055F1B /* Pods-Homework 2.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		8D80396095C11696C5AB0B37 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0E442434DBCCD0585CD6E40D /* Pods_Homework_2.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -77,9 +199,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 20EB6BA5280DA6C9000AFB38 /* Build configuration list for PBXNativeTarget "Homework 2" */;
 			buildPhases = (
+				024F4B4D826AEE87CE56FA5F /* [CP] Check Pods Manifest.lock */,
 				20EB6B8A280DA6C7000AFB38 /* Sources */,
 				20EB6B8B280DA6C7000AFB38 /* Frameworks */,
 				20EB6B8C280DA6C7000AFB38 /* Resources */,
+				D8827ED2029E0686297DAAE2 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -112,6 +236,7 @@
 			knownRegions = (
 				en,
 				Base,
+				ru,
 			);
 			mainGroup = 20EB6B85280DA6C7000AFB38;
 			productRefGroup = 20EB6B8F280DA6C7000AFB38 /* Products */;
@@ -128,22 +253,79 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				20963E6B2811D0D50083155C /* Localizable.strings in Resources */,
 				20EB6BA1280DA6C9000AFB38 /* LaunchScreen.storyboard in Resources */,
 				20EB6B9E280DA6C9000AFB38 /* Assets.xcassets in Resources */,
 				20EB6B99280DA6C7000AFB38 /* Main.storyboard in Resources */,
+				206CAC42280EB65900C4D67D /* SF Font.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		024F4B4D826AEE87CE56FA5F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Homework 2-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D8827ED2029E0686297DAAE2 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Homework 2/Pods-Homework 2-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Homework 2/Pods-Homework 2-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Homework 2/Pods-Homework 2-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		20EB6B8A280DA6C7000AFB38 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				20963E5B281020E50083155C /* ConfigurableCell.swift in Sources */,
+				206CAC4E280F135700C4D67D /* MyFriendsDataSource.swift in Sources */,
 				20EB6B9C280DA6C7000AFB38 /* Homework_2.xcdatamodeld in Sources */,
-				20EB6B96280DA6C7000AFB38 /* ViewController.swift in Sources */,
+				206CAC4C280F133200C4D67D /* MyFriendsViewModel.swift in Sources */,
+				20963E5628101F430083155C /* NewContactOption.swift in Sources */,
+				20963E54280FE9890083155C /* NewContactsTableViewCell.swift in Sources */,
+				20963E61281024840083155C /* MightKnowTableViewCell.swift in Sources */,
+				20963E6328103DA70083155C /* AddNewFriendDataSource.swift in Sources */,
+				206CAC52280F307D00C4D67D /* AddNewFriendViewController.swift in Sources */,
+				206CAC37280DFBC200C4D67D /* Friend.swift in Sources */,
+				20963E6528107E2E0083155C /* AddNewFriendViewModel.swift in Sources */,
+				206CAC35280DE4FF00C4D67D /* FriendsCollectionViewCell.swift in Sources */,
+				20EB6B96280DA6C7000AFB38 /* MyFriendsViewController.swift in Sources */,
 				20EB6B92280DA6C7000AFB38 /* AppDelegate.swift in Sources */,
+				20963E5828101F8F0083155C /* MightKnow.swift in Sources */,
+				20963E5D2810210F0083155C /* CellConfigurator.swift in Sources */,
 				20EB6B94280DA6C7000AFB38 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -151,10 +333,31 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
+		206CAC44280EB65900C4D67D /* SF Font.ttf */ = {
+			isa = PBXVariantGroup;
+			children = (
+				206CAC43280EB65900C4D67D /* en */,
+				206CAC45280EB68200C4D67D /* Base */,
+				20963E6A2811D0770083155C /* ru */,
+			);
+			name = "SF Font.ttf";
+			path = ../../../../Downloads;
+			sourceTree = "<group>";
+		};
+		20963E6D2811D0D50083155C /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				20963E6C2811D0D50083155C /* en */,
+				20963E6E2811D0DA0083155C /* ru */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
 		20EB6B97280DA6C7000AFB38 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				20EB6B98280DA6C7000AFB38 /* Base */,
+				20963E692811D0770083155C /* ru */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -163,6 +366,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				20EB6BA0280DA6C9000AFB38 /* Base */,
+				20963E682811D0770083155C /* ru */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -174,6 +378,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
@@ -234,6 +439,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
@@ -286,6 +492,7 @@
 		};
 		20EB6BA6280DA6C9000AFB38 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = ED61A09A0C6FCAA96942B6D8 /* Pods-Homework 2.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -314,6 +521,7 @@
 		};
 		20EB6BA7280DA6C9000AFB38 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1C2EB711CC20EFF83F055F1B /* Pods-Homework 2.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;

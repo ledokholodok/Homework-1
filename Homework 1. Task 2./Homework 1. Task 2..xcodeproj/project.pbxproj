@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		206CAC3E280EB64800C4D67D /* Montserrat.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 206CAC40280EB64800C4D67D /* Montserrat.ttf */; };
 		209ED4062808B47F00D64468 /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 209ED4052808B47F00D64468 /* CustomTextField.swift */; };
 		209F2DF02805437A00559666 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 209F2DEF2805437A00559666 /* AppDelegate.swift */; };
 		209F2DF22805437A00559666 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 209F2DF12805437A00559666 /* SceneDelegate.swift */; };
@@ -15,7 +16,6 @@
 		209F2DFA2805437A00559666 /* Homework_1__Task_2_.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 209F2DF82805437A00559666 /* Homework_1__Task_2_.xcdatamodeld */; };
 		209F2DFC2805437C00559666 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 209F2DFB2805437C00559666 /* Assets.xcassets */; };
 		209F2DFF2805437C00559666 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 209F2DFD2805437C00559666 /* LaunchScreen.storyboard */; };
-		20AB3528280564A600798C68 /* Montserrat.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 20AB3527280564A500798C68 /* Montserrat.ttf */; };
 		20AB352E2805918500798C68 /* Montserrat SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 20AB352D2805918500798C68 /* Montserrat SemiBold.ttf */; };
 		20AB35302805939900798C68 /* Montserrat Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 20AB352F2805939900798C68 /* Montserrat Regular.ttf */; };
 		20AB35322805B01B00798C68 /* Cell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20AB35312805B01B00798C68 /* Cell.swift */; };
@@ -25,6 +25,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		206CAC3F280EB64800C4D67D /* en */ = {isa = PBXFileReference; lastKnownFileType = file; name = en; path = en.lproj/Montserrat.ttf; sourceTree = "<group>"; };
+		206CAC41280EB64B00C4D67D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file; name = Base; path = Base.lproj/Montserrat.ttf; sourceTree = "<group>"; };
 		209ED4052808B47F00D64468 /* CustomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
 		209F2DEC2805437A00559666 /* Homework 1. Task 2..app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Homework 1. Task 2..app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		209F2DEF2805437A00559666 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -35,7 +37,6 @@
 		209F2DFB2805437C00559666 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		209F2DFE2805437C00559666 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		209F2E002805437C00559666 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		20AB3527280564A500798C68 /* Montserrat.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = Montserrat.ttf; path = ../../../../Downloads/Montserrat.ttf; sourceTree = "<group>"; };
 		20AB352D2805918500798C68 /* Montserrat SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Montserrat SemiBold.ttf"; path = "../../../../Downloads/Montserrat SemiBold.ttf"; sourceTree = "<group>"; };
 		20AB352F2805939900798C68 /* Montserrat Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Montserrat Regular.ttf"; path = "../../../../Downloads/Montserrat Regular.ttf"; sourceTree = "<group>"; };
 		20AB35312805B01B00798C68 /* Cell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cell.swift; sourceTree = "<group>"; };
@@ -79,7 +80,7 @@
 		209F2DEE2805437A00559666 /* Homework 1. Task 2. */ = {
 			isa = PBXGroup;
 			children = (
-				20AB3527280564A500798C68 /* Montserrat.ttf */,
+				206CAC40280EB64800C4D67D /* Montserrat.ttf */,
 				20AB352D2805918500798C68 /* Montserrat SemiBold.ttf */,
 				20AB352F2805939900798C68 /* Montserrat Regular.ttf */,
 				209F2DEF2805437A00559666 /* AppDelegate.swift */,
@@ -176,7 +177,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				20AB352E2805918500798C68 /* Montserrat SemiBold.ttf in Resources */,
-				20AB3528280564A600798C68 /* Montserrat.ttf in Resources */,
+				206CAC3E280EB64800C4D67D /* Montserrat.ttf in Resources */,
 				209F2DFF2805437C00559666 /* LaunchScreen.storyboard in Resources */,
 				20AB35302805939900798C68 /* Montserrat Regular.ttf in Resources */,
 				209F2DFC2805437C00559666 /* Assets.xcassets in Resources */,
@@ -247,6 +248,16 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
+		206CAC40280EB64800C4D67D /* Montserrat.ttf */ = {
+			isa = PBXVariantGroup;
+			children = (
+				206CAC3F280EB64800C4D67D /* en */,
+				206CAC41280EB64B00C4D67D /* Base */,
+			);
+			name = Montserrat.ttf;
+			path = ../../../../Downloads;
+			sourceTree = "<group>";
+		};
 		209F2DF52805437A00559666 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (

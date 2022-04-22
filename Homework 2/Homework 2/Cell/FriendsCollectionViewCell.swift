@@ -50,6 +50,7 @@ class FriendsCollectionViewCell: UICollectionViewCell {
     
     override func layoutSubviews() {
         super.layoutSubviews()
+        self.layer.cornerRadius = 12
         friendImage.layer.cornerRadius = friendImage.bounds.width / 2
         friendImage.clipsToBounds = true
         friendStatus.layer.cornerRadius = 5
@@ -61,8 +62,7 @@ class FriendsCollectionViewCell: UICollectionViewCell {
 
 
     private func layoutUI() {
-        self.backgroundColor = .quaternarySystemFill
-        self.layer.cornerRadius = 12
+        self.backgroundColor = .systemBackground
         self.addSubview(friendImage)
         self.addSubview(stackView)
         self.addSubview(friendJob)
@@ -76,7 +76,7 @@ class FriendsCollectionViewCell: UICollectionViewCell {
         stackView.snp.makeConstraints {
             $0.top.equalTo(friendImage.snp.bottom).offset(19)
             $0.centerX.equalToSuperview()
-            $0.height.equalTo(friendName).inset(1)
+            $0.height.equalTo(friendName).inset(4)
         }
         
         friendStatus.snp.makeConstraints {

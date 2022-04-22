@@ -8,9 +8,13 @@
 import UIKit
 import SnapKit
 
-class NewContactsTableViewCell: UITableViewCell {
+typealias NewContactCellConfigurator = TableCellConfigurator<NewContactsTableViewCell, NewContactOption>
 
+class NewContactsTableViewCell: UITableViewCell, ConfigurableCell {
+    
+    typealias DataType = NewContactOption
     static let identifier = "NewContactsTableCell"
+    
     // book, signature, phone.connection
     let icon: UIImageView = {
         let icon = UIImageView()
@@ -34,6 +38,11 @@ class NewContactsTableViewCell: UITableViewCell {
         fatalError("init(coder:) has not been implemented")
     }
     
+    func configure(data: NewContactOption) {
+        icon.image = UIImage(systemName: data.iconTitle)
+        button.setTitle(data.buttonTitle, for: .normal)
+    }
+    
     private func layoutUI() {
         contentView.addSubview(icon)
         contentView.addSubview(button)
@@ -44,7 +53,7 @@ class NewContactsTableViewCell: UITableViewCell {
         }
         
         button.snp.makeConstraints {
-            $0.leading.equalTo(icon.snp.trailing).offset(8)
+            $0.leading.equalToSuperview().offset(37)
             $0.centerY.equalToSuperview()
             $0.height.equalTo(44)
         }

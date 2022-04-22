@@ -52,10 +52,10 @@ class ViewController: UIViewController, UITextFieldDelegate {
     private func configureNavigationBar() {
         view.addSubview(navigationBar)
         navigationBar.backgroundColor = .white
-        let leftBarButton = UIBarButtonItem(title: "Done", style: .plain, target: ViewController.self, action: #selector(doneTapped))
+        let leftBarButton = UIBarButtonItem(title: "Done", style: .plain, target: .none, action: .none)
         navigationItem.leftBarButtonItem = leftBarButton
         navigationItem.title = "Create Reminder"
-        let rightBarButton = UIBarButtonItem(title: "Cancel", style: .plain, target: ViewController.self,  action: #selector(cancelTapped))
+        let rightBarButton = UIBarButtonItem(title: "Cancel", style: .plain, target: .none,  action: .none)
         navigationItem.rightBarButtonItem = rightBarButton
         
         navigationBar.snp.makeConstraints {
@@ -63,13 +63,6 @@ class ViewController: UIViewController, UITextFieldDelegate {
         }
     }
     
-    @objc func doneTapped(_ sender: UIBarButtonItem) {
-        print("Done")
-    }
-    
-    @objc func cancelTapped(_ sender: UIBarButtonItem) {
-        print("Cancel")
-    }
     
     private func configureTaskTextField() {
         view.addSubview(taskView)

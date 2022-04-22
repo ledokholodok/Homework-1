@@ -9,19 +9,22 @@ import UIKit
 
 class MyFriendsViewController: UIViewController {
     
+    let viewModel = MyFriendsViewModel()
+    var friends: [Friend] = []
+    
     private let collectionView: UICollectionView = {
         let layout = UICollectionViewFlowLayout()
         layout.scrollDirection = .vertical
-        
         let collectionView = UICollectionView(frame: .zero, collectionViewLayout: layout)
         return collectionView
     }()
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.backgroundColor = .systemGray6
+        view.backgroundColor = .secondarySystemBackground
         configureNavigationBar()
-        configureCollectionCell()
+        configureCollectionView()
+        loadFriends()
     }
     
     private func configureNavigationBar() {
@@ -29,40 +32,49 @@ class MyFriendsViewController: UIViewController {
         let leftNavigationItem = UIBarButtonItem(image: UIImage(systemName: "plus.circle"), style: .plain, target: self, action: #selector(addNewFriends))
         navigationItem.rightBarButtonItem = rightNavigationItem
         navigationItem.leftBarButtonItem = leftNavigationItem
-        navigationItem.title = "My Friends"
+        navigationItem.title = NSLocalizedString("My Friends", comment: "")
     }
     
     @objc private func addNewFriends() {
-        
+        let rootVC = AddNewFriendViewController()
+        let navigationVC = UINavigationController(rootViewController: rootVC)
+        navigationVC.modalPresentationStyle = .currentContext
+        present(navigationVC, animated: true)
     }
     
-    private func configureCollectionCell() {
+    private func configureCollectionView() {
         view.addSubview(collectionView)
-        
+        collectionView.backgroundColor = .clear
         collectionView.delegate = self
         collectionView.dataSource = self
         collectionView.snp.makeConstraints {
             $0.edges.equalTo(view.safeAreaLayoutGuide)
                 .inset(UIEdgeInsets(top: 0, left: 16, bottom: 0, right: 16))
         }
-        collectionView.backgroundColor = .systemGray6
+        
         collectionView.register(FriendsCollectionViewCell.self, forCellWithReuseIdentifier: FriendsCollectionViewCell.identifier)
+    }
+    
+    private func loadFriends() {
+        friends = viewModel.getMyFriends()
     }
 }
 
 extension MyFriendsViewController: UICollectionViewDelegate, UICollectionViewDelegateFlowLayout, UICollectionViewDataSource {
+    
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-            return 50
+        return friends.count
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: FriendsCollectionViewCell.identifier, for: indexPath) as? FriendsCollectionViewCell else {
                 return UICollectionViewCell()
         }
-        cell.profileName.text = "Savannah Tucker"
-        cell.profileImage.image = UIImage(named: "Tucker")
-        cell.profileJob.text = "Retail Supervisor"
-        cell.profileStatus.backgroundColor = UIColor(named: "Online")
+        let item = friends[indexPath.row]
+        cell.friendName.text = item.name
+        cell.friendImage.image = item.photo
+        cell.friendJob.text = item.job
+        cell.friendStatus.backgroundColor = item.statusColor
         return cell
     }
     

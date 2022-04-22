@@ -13,12 +13,49 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
 
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
-        // Use this method to optionally configure and attach the UIWindow `window` to the provided UIWindowScene `scene`.
-        // If using a storyboard, the `window` property will automatically be initialized and attached to the scene.
-        // This delegate does not imply the connecting scene or session are new (see `application:configurationForConnectingSceneSession` instead).
-        guard let _ = (scene as? UIWindowScene) else { return }
+        guard let windowScene = (scene as? UIWindowScene) else { return }
+        
+        let myFeedVC = createMyFeedVC()
+        let myFriendsVC = createMyFriendsVC()
+        let myPinsVC = createMyPinsVC()
+        let myProfileVC = createMyProfileVC()
+        
+        let tabBarController = UITabBarController()
+        tabBarController.viewControllers = [myFeedVC, myFriendsVC, myPinsVC, myProfileVC]
+        
+        window = UIWindow(windowScene: windowScene)
+        window?.rootViewController = tabBarController
+        window?.makeKeyAndVisible()
     }
 
+    private func createMyFeedVC() -> UINavigationController {
+        let myFeedVC = UINavigationController(rootViewController: MyFeedViewController())
+        myFeedVC.title = NSLocalizedString("My Feed", comment: "")
+        myFeedVC.tabBarItem = UITabBarItem(title: NSLocalizedString("My Feed", comment: ""), image: UIImage(systemName: "text.below.photo"), tag: 0)
+        return myFeedVC
+    }
+    
+    private func createMyFriendsVC() -> UINavigationController {
+        let myFriendsVC = UINavigationController(rootViewController: MyFriendsViewController())
+        myFriendsVC.title = NSLocalizedString("My Friends", comment: "")
+        myFriendsVC.tabBarItem = UITabBarItem(title:  NSLocalizedString("My Friends", comment: ""), image: UIImage(systemName: "person.2.fill"), tag: 0)
+        return myFriendsVC
+    }
+    
+    private func createMyPinsVC() -> UINavigationController {
+        let myPinsVC = UINavigationController(rootViewController: MyPinsViewController())
+        myPinsVC.title = NSLocalizedString("My Pins", comment: "")
+        myPinsVC.tabBarItem = UITabBarItem(title: NSLocalizedString("My Pins", comment: ""), image: UIImage(systemName: "pin.fill"), tag: 0)
+        return myPinsVC
+    }
+    
+    private func createMyProfileVC() -> UINavigationController {
+        let myProfileVC = UINavigationController(rootViewController: MyProfileViewController())
+        myProfileVC.title = NSLocalizedString("My Profile", comment: "")
+        myProfileVC.tabBarItem = UITabBarItem(title: NSLocalizedString("My Profile", comment: ""), image: UIImage(systemName: "person.crop.rectangle.stack.fill"), tag: 0)
+        return myProfileVC
+    }
+    
     func sceneDidDisconnect(_ scene: UIScene) {
         // Called as the scene is being released by the system.
         // This occurs shortly after the scene enters the background, or when its session is discarded.

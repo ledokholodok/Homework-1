@@ -8,13 +8,12 @@
 import Foundation
 import UIKit
 
-
 struct NewContactOption {
     var iconTitle: String
     var buttonTitle: String
     
     func hash(into hasher: inout Hasher) {
-        hasher.combine(icon)
+        hasher.combine(iconTitle)
         hasher.combine(buttonTitle)
     }
 }

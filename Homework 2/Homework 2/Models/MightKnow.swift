@@ -6,3 +6,13 @@
 //
 
 import Foundation
+import UIKit
+
+struct MightKnow {
+    var profileImage: String
+    var statusColor: String
+    var profileName: String
+    var friendsCount: String
+    var friendToggleLabel: String
+    var friendToggleImage: String
+}

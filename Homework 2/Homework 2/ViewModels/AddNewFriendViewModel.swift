@@ -6,3 +6,19 @@
 //
 
 import Foundation
+
+class AddNewFriendViewModel {
+    
+    let dataSource: AddNewFriendDataSource
+    //TODO: make observable
+    var items: [CellConfigurator] = []
+    
+    init() {
+        dataSource = AddNewFriendDataSource()
+    }
+    
+    func getItems() -> [CellConfigurator] {
+        items = dataSource.getItems()
+        return items
+    }
+}
