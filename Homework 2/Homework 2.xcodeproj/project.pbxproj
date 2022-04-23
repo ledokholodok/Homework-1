@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2059884328142C2C00C6EBE7 /* TableDirector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2059884228142C2C00C6EBE7 /* TableDirector.swift */; };
+		2059884528142C5C00C6EBE7 /* CellAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2059884428142C5C00C6EBE7 /* CellAction.swift */; };
+		2059884728142C7F00C6EBE7 /* CellActionProxy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2059884628142C7F00C6EBE7 /* CellActionProxy.swift */; };
 		206CAC35280DE4FF00C4D67D /* FriendsCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 206CAC34280DE4FE00C4D67D /* FriendsCollectionViewCell.swift */; };
 		206CAC37280DFBC200C4D67D /* Friend.swift in Sources */ = {isa = PBXBuildFile; fileRef = 206CAC36280DFBC200C4D67D /* Friend.swift */; };
 		206CAC42280EB65900C4D67D /* SF Font.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 206CAC44280EB65900C4D67D /* SF Font.ttf */; };
@@ -35,6 +38,9 @@
 /* Begin PBXFileReference section */
 		0E442434DBCCD0585CD6E40D /* Pods_Homework_2.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Homework_2.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1C2EB711CC20EFF83F055F1B /* Pods-Homework 2.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Homework 2.release.xcconfig"; path = "Target Support Files/Pods-Homework 2/Pods-Homework 2.release.xcconfig"; sourceTree = "<group>"; };
+		2059884228142C2C00C6EBE7 /* TableDirector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableDirector.swift; sourceTree = "<group>"; };
+		2059884428142C5C00C6EBE7 /* CellAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellAction.swift; sourceTree = "<group>"; };
+		2059884628142C7F00C6EBE7 /* CellActionProxy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellActionProxy.swift; sourceTree = "<group>"; };
 		206CAC34280DE4FE00C4D67D /* FriendsCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendsCollectionViewCell.swift; sourceTree = "<group>"; };
 		206CAC36280DFBC200C4D67D /* Friend.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Friend.swift; sourceTree = "<group>"; };
 		206CAC43280EB65900C4D67D /* en */ = {isa = PBXFileReference; lastKnownFileType = file; name = en; path = "en.lproj/SF Font.ttf"; sourceTree = "<group>"; };
@@ -171,6 +177,9 @@
 				206CAC44280EB65900C4D67D /* SF Font.ttf */,
 				20EB6B9A280DA6C7000AFB38 /* Homework_2.xcdatamodeld */,
 				20963E6D2811D0D50083155C /* Localizable.strings */,
+				2059884228142C2C00C6EBE7 /* TableDirector.swift */,
+				2059884428142C5C00C6EBE7 /* CellAction.swift */,
+				2059884628142C7F00C6EBE7 /* CellActionProxy.swift */,
 			);
 			path = "Homework 2";
 			sourceTree = "<group>";
@@ -311,11 +320,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				20963E5B281020E50083155C /* ConfigurableCell.swift in Sources */,
+				2059884528142C5C00C6EBE7 /* CellAction.swift in Sources */,
 				206CAC4E280F135700C4D67D /* MyFriendsDataSource.swift in Sources */,
 				20EB6B9C280DA6C7000AFB38 /* Homework_2.xcdatamodeld in Sources */,
 				206CAC4C280F133200C4D67D /* MyFriendsViewModel.swift in Sources */,
 				20963E5628101F430083155C /* NewContactOption.swift in Sources */,
 				20963E54280FE9890083155C /* NewContactsTableViewCell.swift in Sources */,
+				2059884328142C2C00C6EBE7 /* TableDirector.swift in Sources */,
+				2059884728142C7F00C6EBE7 /* CellActionProxy.swift in Sources */,
 				20963E61281024840083155C /* MightKnowTableViewCell.swift in Sources */,
 				20963E6328103DA70083155C /* AddNewFriendDataSource.swift in Sources */,
 				206CAC52280F307D00C4D67D /* AddNewFriendViewController.swift in Sources */,
